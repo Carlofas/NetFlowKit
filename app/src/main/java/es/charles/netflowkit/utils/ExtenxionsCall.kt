@@ -3,7 +3,7 @@ package es.charles.netflowkit.utils
 import es.charles.netflowkit.communication.NetworkResponse
 import okhttp3.Headers
 
-const val TAG = "NET FLOW KIT"
+const val TAG = "NetFlowKit"
 typealias GenericResponse<S> = NetworkResponse<S, Error>
 
 suspend fun <T : Any> NetworkResponse<T, Error>.onSuccess(

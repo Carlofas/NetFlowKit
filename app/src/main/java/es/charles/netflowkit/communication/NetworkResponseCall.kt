@@ -28,7 +28,7 @@ internal class NetworkResponseCall<S: Any, E: Any> (
                         "DATA BODY:\n${mGson.toJson(body)}")
 
                 val headers = response.headers()
-                val message = response.headers()["message"]
+                val message = response.headers()["message"] ?: response.message()
 
                 if (response.isSuccessful){
                     when (code) {
